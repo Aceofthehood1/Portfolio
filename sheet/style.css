@@ -1,7 +1,98 @@
+body{
+  font-family: 'Noto Sans', sans-serif;
+  font-size:1.5em;
+  margin:0px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.container{
+  width:80%;
+  margin:auto;
+  overflow: hidden;
+  color: cornsilk;
+}
+
+header{
+background:rgb(0, 0, 0);
+padding-top:20px;
+min-height: 40px;
+border-bottom: red 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform:uppercase;
+}
+
+footer{
+  background: rgb(0, 0, 0);
+  border-top: red 3px solid;/*A background for the footer and and a red line border above and beside it */
+  min-height: 20px;
+  text-align: center;
+  vertical-align: bottom;
+  margin-top: 700px;
+}
+
+footer a{
+  text-decoration:none;
+  /*This removes the lines seperating each of the social media icons*/
+}
+
+header ul{
+  margin:0;
+  padding:0;
+}
+
+header li{
+  float: left;
+  padding:0 20px 0 20px;
+  display:inline;
+}
+
+header nav{
+  float:right;
+}
+
+.fab{
+  color:white;
+  margin: 10px;
+  transition:all .5s ease-in-out;
+}
+
+.fab:hover{
+  transform: scale(1.2);
+}
+
+.text-container{
+  width: 260px;
+          height: 130px;
+          border-right: 1px solid #403F44;
+          float: left;
+          text-transform: uppercase;
+          font-size: 16px;
+          margin: 43px 0 0;
+}
+
+@media(max-width:600px)
+{
+  body{
+      max-width: 100%;
+  border-radius:5px;
+  grid-column: 1;
+  }
+}
+
 :root{
   font-size:75.5%;
   font-family:"Raleway",sans-serif;
 }
+
 /*Editing the header by size color and thickness and also font family*/
 h1{
   font-size: 3.5rem;
@@ -10,30 +101,38 @@ h1{
   font-family:"Oswald",sans-serif;
   color: #3974b79d
 }
+
 hr{
   /*This allows the images to be seperated by margins without any borders on the side*/
   margin: 1rem, 0, 1rem, 0;
   border:0;
   border-top: 1px solid rgba(0,0,0,1);
 }
-.container{
+
+.gallery-container{
   width: 96rem;
   margin:2rem auto;
 }
+
 /* This code makes use of a transition that takes place when the mouse pointer passes through the images*/
 .gallery-item{
   max-width: 100%;
   border-radius:5px;
   box-shadow: 0.5px, 20px, rgba(0,0,0,0.5);
-  transition:all 3s ease-in-out;
+  transition:all .5s ease-in-out;
   overflow:hidden; 
+  background-color: #403F44;
 }
+
 .gallery{
   display:grid;
   grid-template-columns:
   repeat(auto-fit, minmax(300px,1fr));
-  grid-gap:1.5rem;
+  grid-gap:3.5rem;
+  margin-top: 30px;
+  padding: 87px;
 }
+
 .image{
   /*Affects the transparency of the image*/
   opacity:1;
@@ -44,6 +143,7 @@ hr{
   backface-visibility: hidden;
   object-fit:cover;
 }
+
 .middle{
   transition:5s ease-in-out;
   opacity:0;
@@ -53,21 +153,53 @@ hr{
   transform: translate(-50%,-50%);
   text-align:center;
 }
+
 .gallery-item:hover .image{
   filter:grayscale(1);
 }
+
 .gallery-item:hover.middle{
   opacity:1;
 }
+
 .gallery-item:hover{
   box-shadow:0,10px,20px,rgba(0,0,0,0);
+  transform: scale(1.1);
 }
+
 .text{
   color:#ffffff;
   font-size:2.5em;
   padding:16px,32px;
   font-family:"Oswald",sans-serif;
 }
+
+.welcome-page{
+    height: 100vh;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+span{
+  color: black;
+}
+
+.gallery-page{
+  height: 100vh;
+  margin: 0;
+}
+
+.gallery-text{
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
 @media (max-width:500px){
   .gallery-item,body{
     max-width: 30%;
