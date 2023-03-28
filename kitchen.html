@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Site</title>
+    <link rel="stylesheet" href="sheet/style.css"> <!--This links the stylesheet styles to html file-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap" rel="stylesheet"><!--This links a style sheet that contains fonts-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"> <!--This link is for the font awsome  icons-->
+</head>
+<body>
+
+
+    <header>
+        <div class="container">
+          <a href="portfolio.html"><i class="fa-solid fa-house-chimney fa-3x"></i> </a>
+          <h1 id="item-title">Restaurant Site</h1>
+        </div>
+    </header>
+
+    <main>
+            <div class="gallery-container">
+              <h2 class="overview">Overview</h2>
+              <p>This webpage shows a list of menu items of a restaurant and consists of an admin page where the admin can login and edit the items shown on the page in case of promotions where they may be adding new dishes or removing some dishs to introduce a new one. Users can make reviews on the dishs they have tried from a range of 1 - 5. 5 being excellent and 1 being bad.</p>
+            <hr>
+          <div class="gallery">
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">Admin Login Page</p>
+              <p class ="gallery-item-description">This is the login page where the admin can login into the admin side of the website and make changes that will be reflected on the main page. If the user is not able to login to the system, they will not be able to access any of the admin privilages and if they selected any of the admin links they will be directed to the login page</p>
+            </div>
+            <img  class="image-container" src="photos/kitchen-photos/login-page.png" alt="Placeholder Image" class="image">
+          </div>
+          
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">Successful login</p>
+              <p class ="gallery-item-description">The admin user is directed to this page when the correct login details are entered and now they can edit other components of the website from the navigation bar</p>
+            </div>
+            <img class="image-container" src="photos/kitchen-photos/login-successful.png" alt="Placeholder Image" class="image">
+          </div>
+          
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">Wrong Username</p>
+              <p class="gallery-item-description">This shows the error message that appears when the user enters a wrong username</p>
+            </div>
+            <img class="image-container" src="photos/kitchen-photos/wrong-username.png" alt="Placeholder Image" class="image">
+          </div>
+          
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">Wrong Password</p>
+              <p class="gallery-item-description">This shows the error message that appears when the user enters the wrong password for an existing username</p>
+            </div>
+            <img class="image-container" src="photos/kitchen-photos/wrong-password.png" alt="Placeholder Image" class="image">
+          </div>
+          
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">Create Admin Account</p>
+              <p class="gallery-item-description">This is a page that allows an admin to create admin accounts and it can only be accessed when an admin user is logged in</p>
+            </div>
+            <img class="image-container" src="photos/kitchen-photos/create-admin.png" alt="Placeholder Image" class="image">
+          </div>
+          
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">List of Admin Accounts</p>
+              <p class="gallery-item-description">This page shows a list of all the current admin accounts in the datatbase. When new admin accounts are created they will be visible on this page. The admin accounts can also be deleted by pressing the delete button which will also remove the selcted account from the database</p>
+            </div>
+            <img class="image-container" src="photos/kitchen-photos/admin-accounts.png" alt="Placeholder Image" class="image">
+          </div>
+
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">List Of Menu Items Page</p>
+              <p class="gallery-item-description">This page shows a list of the current menu dishes that the restaurant offers. The admin can add a new dish, edit current dishes or delete them.</p>
+            </div>
+            <img class="image-container" src="photos/kitchen-photos/edit-menu.png" alt="Placeholder Image" class="image">
+          </div>
+
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">Add New Dish</p>
+              <p class="gallery-item-description">On this page, the admin can add new dishes that will be shown on the main site and it will also be seen on the list of menu items page also. The reason the title of this page is "Edit Dish" is because the edit dish and add dish functionality both make use of this page but what they do is different. The add dish function adds the dish when the dish is not in the database, if the dish is already in the database, then it will be edited. This was done to reduce repetition for the code and to prevent the users from having the same dish and showing that on the site. This was done for the other edit pages too. </p>
+            </div>
+            <img class="image-container" src="photos/kitchen-photos/add-dish.png" alt="Placeholder Image" class="image">
+          </div>
+
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">Add New Dish Page showing Visibility Field Options</p>
+              <p class="gallery-item-description">This image is showing the possible options the admin can select regarding the visibility of a dish. This means that if the admin selected hide, the dish would not be shown on the main site for customers to see but, the admin users would be able to see it on the menu list page.</p>
+            </div>
+            <img class="image-container" src="photos/kitchen-photos/add-dish-visiblility.png" alt="Placeholder Image" class="image">
+          </div>
+
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">Edit Existing Dish</p>
+              <p class="gallery-item-description">The admin is directed to this page when they select the edit link for a particular dish. The details of the dish are filled in into the field boxes and the admin can make changes to the dish which will be shown on the main site if the visibily is still set to show</p>
+            </div>
+            <img class="image-container" src="photos/kitchen-photos/edit-existing-dish.png" alt="Placeholder Image" class="image">
+          </div>
+
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">List of categories</p>
+              <p class="gallery-item-description">This page shows a list of the current categories for dishes. New categories can be added and the old ones can be edited and deleted.</p>
+            </div>
+            <img class="image-container" src="photos/kitchen-photos/edit-categories.png" alt="Placeholder Image" class="image">
+          </div>
+
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">Add Category Page</p>
+              <p class="gallery-item-description">This page allows the admin to add new dish categories to the main site which could be used to classify new dishes.</p>
+            </div>
+            <img class="image-container" src="photos/kitchen-photos/add-category.png" alt="Placeholder Image" class="image">
+          </div>
+
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">Edit existing category</p>
+              <p class="gallery-item-description">The admin is directed to this page by selected the edit link which fills the data of the selected category in the field and when the admin makes changes to it, it will be reflected on the main page</p>
+            </div>
+            <img class="image-container" src="photos/kitchen-photos/edit-dessert-category.png" alt="Placeholder Image" class="image">
+          </div>
+
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">List of offers available</p>
+              <p class="gallery-item-description">This is a page that allows the admin to add offers which are promotions for a new dish coming out or discounts. The admin can remove them when the offers have expired by deleting them which means that it will not be visble on the main site. </p>
+            </div>
+            <img class="image-container" src="photos/kitchen-photos/edit-offers.png" alt="Placeholder Image" class="image">
+          </div>
+
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">Add New Offer Page</p>
+              <p class="gallery-item-description">The admin is directed to this page by selecting the add new offers link. They will need to type in a title and a description for the offer. When the offer is added the current date the offer was added on will be recorded and shown on the main site.</p>
+            </div>
+            <img class="image-container" src="photos/kitchen-photos/add-offer.png" alt="Placeholder Image" class="image">
+          </div>
+
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">List of reviews and users that made them</p>
+              <p class="gallery-item-description">This page is used to monitor the reviews made by the customers. Reviews can be deleted when the cutomers makes an aggressive comment that the admins would not want to visble on the site.</p>
+            </div>
+            <img class="image-container" src="photos/kitchen-photos/edit-reviews.png" alt="Placeholder Image" class="image">
+          </div>
+
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">Homepage Navigation Bar</p>
+              <p class="gallery-item-description">This image shows the navigation bar of the main site. This is the page the customers will be able to see.</p>
+            </div>
+            <img class="image-container" src="photos/kitchen-photos/menu-list.png" alt="Placeholder Image" class="image">
+          </div>
+
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">Homepage Content</p>
+              <p class="gallery-item-description">The homepage shows the offers that the restaurant is promoting and shows they date and the descriptions of the offers that were put up by the admin.</p>
+            </div>
+            <img class="image-container" src="photos/kitchen-photos/homepage.png" alt="Placeholder Image" class="image">
+          </div>
+
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">Selected Menu Category From Navigation Bar</p>
+              <p class="gallery-item-description">When a category is selected the page shows all the dishes of the selcted category and their details. This page also shows the reviews made by other customers on the dishes of the selected category.</p>
+            </div>
+            <img class="image-container" src="photos/kitchen-photos/starters.png" alt="Placeholder Image" class="image">
+          </div>
+
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">Review Form For Selected Categories Dishes</p>
+              <p class="gallery-item-description">The users will also be able to make reviews on the dishes of the selected categories</p>
+            </div>
+            <img class="image-container" src="photos/kitchen-photos/review-form.png" alt="Placeholder Image" class="image">
+          </div>
+
+          <div class="gallery-item">
+            <div class="gallery-item-text">
+              <p class="gallery-item-title">About Us Page</p>
+              <p class="gallery-item-description">This shows the about us page which describes the restaurant and also provides links to view the dishes the restaurant serves.</p>
+            </div>
+            <img class="image-container" src="photos/kitchen-photos/about-us.png" alt="Placeholder Image" class="image">
+          </div>
+
+            </div>
+            </div>
+    </main>
+
+    <footer>
+        <div class="container">
+          <a href="https://www.facebook.com/geoffrey.ameble"><i class="fab fa-facebook fa-3x"></i>
+          <a href="https://github.com/Aceofthehood1/csy1018"><i class="fab fa-github fa-3x"></i>
+          <a href="https://twitter.com/GeoffreyAmeble1"><i class="fab fa-twitter fa-3x"></i>
+          <a href="https://www.instagram.com/geoff_rey101/"><i class="fab fa-instagram fa-3x"></i>
+        </div>
+      </footer>
+</body>
+</html>
