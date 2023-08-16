@@ -1,89 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokemon Library</title>
-    <link rel="stylesheet" href="sheet/style.css"> <!--This links the stylesheet styles to html file-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap" rel="stylesheet"><!--This links a style sheet that contains fonts-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"> <!--This link is for the font awsome  icons-->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon Library</title>
+  <link rel="stylesheet" href="sheet/style.css">
+  <!--This links the stylesheet styles to html file-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap" rel="stylesheet">
+  <!--This links a style sheet that contains fonts-->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <!--This link is for the font awsome  icons-->
 </head>
+
 <body>
 
 
-    <header>
-        <div class="container">
-          <a href="index.html"><i class="fa-solid fa-house-chimney fa-3x"></i> </a>
-          <h1 id="item-title">Pokemon Library</h1>
+  <header>
+    <div class="container">
+      <a href="index.html"><i class="fa-solid fa-house-chimney fa-3x"></i> </a>
+      <h1 id="item-title">Pokemon Library</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="gallery-container">
+      <h2 class="overview">Overview</h2>
+      <p class="gallery-description">This project was done during my internship at Turntabl as I was put in a group with
+        another intern to make an
+        angular project using the data from a pokemon api. I worked on the front-end and my partner worked on the
+        backend of the project. The app allows the user to view the details of pokemon shown by taking the pokemon data
+        from an api and representing the data onto the page based on the users selction.</p>
+      <p class="gallery-description">Made with: <strong>Angular, Pokemon API</strong></p>
+      <p class="gallery-description"><strong>Link:</strong> <a class="project-link" target="_blank"
+        href="https://angular-intern-project.vercel.app/">View Project</a> </p>
+      <hr>
+      <div class="gallery">
+        <div class="gallery-item">
+          <img class="gallery-img" src="photos/pokelibrary-photos/home.png" alt="Placeholder Image" class="image">
+          <p class="gallery-title">Home Page</p>
         </div>
-    </header>
 
-    <main>
-            <div class="gallery-container">
-              <h2 class="overview">Overview</h2>
-              <p>This project was done during my internship at Turntabl as I was put in a group with another intern to make an angular project using the data from a pokemon api. I worked on the front-end and my partner worked on the backend of the project. The app allows the user to view the details of pokemon shown by taking the pokemon data from an api and representing the data onto the page based on the users selction.</p>
-            <hr>
-          <div class="gallery">
-          <div class="gallery-item">
-            <div class="gallery-item-text">
-              <p class="gallery-item-title">Home Page</p>
-              <p class ="gallery-item-description">This is the homepage of the pokemon project</p>
-            </div>
-            <img  class="image-container" src="photos/pokelibrary-photos/home.png" alt="Placeholder Image" class="image">
-          </div>
-          
-          <div class="gallery-item">
-            <div class="gallery-item-text">
-              <p class="gallery-item-title">Pokemon Page</p>
-              <p class ="gallery-item-description">This page shows all the available pokemon in the library.</p>
-            </div>
-            <img class="image-container" src="photos/pokelibrary-photos/pokemon-page.png" alt="Placeholder Image" class="image">
-          </div>
-          
-          <div class="gallery-item">
-            <div class="gallery-item-text">
-              <p class="gallery-item-title">On hover effect</p>
-              <p class="gallery-item-description">This page depicts the hover effect that is shown when a user hovers one of the pokemon cards.</p>
-            </div>
-            <img class="image-container" src="photos/pokelibrary-photos/hover-effect.png" alt="Placeholder Image" class="image">
-          </div>
-          
-          <div class="gallery-item">
-            <div class="gallery-item-text">
-              <p class="gallery-item-title">Pikachu Page</p>
-              <p class="gallery-item-description">This page shows the details of the pokemon pikachu when the user clicks on the pikachu card</p>
-            </div>
-            <img class="image-container" src="photos/pokelibrary-photos/pikachu.png" alt="Placeholder Image" class="image">
-          </div>
-          
-          <div class="gallery-item">
-            <div class="gallery-item-text">
-              <p class="gallery-item-title">Squirtle Page</p>
-              <p class="gallery-item-description">This page shows the details of the pokemon squirtle when the user clicks on the squirtle card</p>
-            </div>
-            <img class="image-container" src="photos/pokelibrary-photos/squirtle.png" alt="Placeholder Image" class="image">
-          </div>
-          
-          <div class="gallery-item">
-            <div class="gallery-item-text">
-              <p class="gallery-item-title">Charmander Page</p>
-              <p class="gallery-item-description">This page shows the details of the pokemon charmander when the user clicks on the charmander card</p>
-            </div>
-            <img class="image-container" src="photos/pokelibrary-photos/charmander.png" alt="Placeholder Image" class="image">
-          </div>
+        <div class="gallery-item">
+          <img class="gallery-img" src="photos/pokelibrary-photos/pokemon-page.png" alt="Placeholder Image"
+            class="image">
+          <p class="gallery-title">Pokemon Page</p>
+        </div>
 
-            </div>
-            </div>
-    </main>
+        <div class="gallery-item">
+          <img class="gallery-img" src="photos/pokelibrary-photos/hover-effect.png" alt="Placeholder Image"
+            class="image">
+          <p class="gallery-title">On hover effect</p>
+        </div>
 
-    <footer>
-        <div class="container">
-          <a href="https://www.facebook.com/geoffrey.ameble"><i class="fab fa-facebook fa-3x"></i>
-          <a href="https://github.com/Aceofthehood1/csy1018"><i class="fab fa-github fa-3x"></i>
-          <a href="https://twitter.com/GeoffreyAmeble1"><i class="fab fa-twitter fa-3x"></i>
+        <div class="gallery-item">
+          <img class="gallery-img" src="photos/pokelibrary-photos/pikachu.png" alt="Placeholder Image" class="image">
+          <p class="gallery-title">Pikachu Page</p>
+        </div>
+
+        <div class="gallery-item">
+          <img class="gallery-img" src="photos/pokelibrary-photos/squirtle.png" alt="Placeholder Image" class="image">
+          <p class="gallery-title">Squirtle Page</p>
+        </div>
+
+        <div class="gallery-item">
+          <img class="gallery-img" src="photos/pokelibrary-photos/charmander.png" alt="Placeholder Image" class="image">
+          <p class="gallery-title">Charmander Page</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <a href="https://www.facebook.com/geoffrey.ameble"><i class="fab fa-facebook fa-3x"></i>
+      <a href="https://github.com/Aceofthehood1/csy1018"><i class="fab fa-github fa-3x"></i>
+        <a href="https://twitter.com/GeoffreyAmeble1"><i class="fab fa-twitter fa-3x"></i>
           <a href="https://www.instagram.com/geoff_rey101/"><i class="fab fa-instagram fa-3x"></i>
-        </div>
-      </footer>
+  </footer>
 </body>
+
 </html>

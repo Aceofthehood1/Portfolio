@@ -26,14 +26,10 @@ header a{
 footer{
   background: rgb(0, 0, 0);
   border-top: red 3px solid;/*A background for the footer and and a red line border above and beside it */
-  min-height: 20px;
-  position: sticky;
+  min-height: 70px;
+  width:100%;
   text-align: center;
-  vertical-align: bottom;
-}
-
-.main-footer{
-  margin-top: 1350px;
+  margin: 0;
 }
 
 footer a{
@@ -103,95 +99,50 @@ hr{
   border-top: 1px solid rgba(0,0,0,1);
 }
 
-.home-gallery{
-  display:grid;
-  grid-template-columns: 550px 550px;
-  grid-template-rows: 500px 500px 500px;
-  grid-gap:7.5rem;
-  margin-top: 30px;
-  padding: 20px;
+.project-link{
+  color: red;
+}
+.gallery{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 10px;
+  width: 1000px;
+  margin-left: 150px;
+  margin-top: 60px;
+  gap: 40px;
+  margin-bottom: 20px;
 }
 
-.home-gallery-item{
+.gallery-item{
+  margin-bottom: 10px;
   width: 600px;
-  height: 480px;
-  border-radius:5px;
-  margin: 20px 0 10px 40px;
-  position: relative;
-  box-shadow: 0.5px, 20px, rgba(0,0,0,0.5);
-  transition:all .5s ease-in-out;
-  overflow:hidden; 
-  background-color: #000;
+  height: 450px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: red;
+  transition: all 700ms ease-in-out;
 }
 
-.home-gallery-item p {
-  color: white;
+.gallery-img{
+  width: 600px;
+  height: 410px;
+  border-radius: 5px;
 }
 
-.home-gallery-container{
-  width: 110rem;
-  margin:2rem auto;
+.gallery-title{
+  text-align: center;
+  font-size: 25px;
+  color: black;
+  margin-top: 0;
 }
 
 .home-gallery-item:hover{
-  box-shadow:0,10px,20px,rgba(0,0,0,0);
-  transform: scale(1.1);
-  cursor: pointer;
+    transform: scale(1.1);
+    cursor: pointer;
 }
-
-.gallery-container{
-  width: 110rem;
-  margin:2rem auto;
-}
-
-/* This code makes use of a transition that takes place when the mouse pointer passes through the images*/
-.gallery-item{
-  width: 600px;
-  height: 480px;
-  border-radius:5px;
-  margin: 20px 0 10px 40px;
-  position: relative;
-  box-shadow: 0.5px, 20px, rgba(0,0,0,0.5);
-  transition:all .5s ease-in-out;
-  overflow:hidden; 
-  background-color: #000;
-}
-
-.gallery-item p {
-  color: white;
-}
-
-.gallery{
-  display:grid;
-  grid-template-columns: 550px 550px;
-  grid-template-rows: 500px 500px 500px;
-  grid-gap:6.9rem;
-  margin-top: 30px;
-  padding: 20px;
-}
-
 .gallery-item:hover{
-  box-shadow:0,10px,20px,rgba(0,0,0,0);
   transform: scale(1.1);
   cursor: pointer;
-}
-
-.gallery-item:hover .gallery-item-text{
-  height:540px;
-  width: 600px;
-  top: 0px;
-  background: #000;
-  opacity: 1;
-}
-
-.gallery-item:hover .gallery-item-description{
-  opacity: 1;
-  visibility: visible;
-}
-
-img{
-  width: 600px;
-  height: 440px;
 }
 
 .text{
@@ -213,36 +164,6 @@ span{
   color: black;
 }
 
-.gallery-page{
-  height: 100vh;
-  margin: 0;
-}
-
-.gallery-text{
-  text-align: center;
-}
-
-
-.gallery-item-text{
-  height: 30px;
-  width: 540px;
-  box-sizing: border-box;
-  position: absolute;
-  bottom: 20px;
-}
-
-.gallery-item-title{
-  width: 600px;
-  height: 30px;
-  color: #000;
-}
-
-.gallery-item-description{
-  visibility: hidden;
-  opacity: 0;
-}
-
-
 a{
   text-decoration: none;
   color: black;
@@ -256,47 +177,82 @@ a{
   color: #3974b79d;
 }
 
-@media(max-width:800px){
+@media (max-width:1200px){
 
-  #grid-title{
+  .gallery-description{
+    padding: 7px;
     text-align: center;
   }
+ .gallery{
+  width: 900px;
+  margin-left: 30px;
+  margin-top: 60px;
+  gap: 20px;
+  row-gap: 30px;
+ }
 
-  .gallery{
-    grid-template-columns: 550px;
-    grid-template-rows: 450px 500px 500px;
-    grid-gap:7.5rem;
-    margin-top: 30px;
-    padding: 20px;
-  }
+ .gallery-item{
+  width: 500px;
+  height: 350px;
+ }
 
-  .gallery-item{
-    width: 450px;
-    height: 500px;
-    margin-left:10px
-  }
+ .gallery-img{
+  width: 100%;
+  height: 320px;
+ }
 
-  .home-gallery{
-    grid-template-columns: 550px;
-    grid-template-rows: 450px 500px 500px;
-    grid-gap:7.5rem;
-    margin-top: 30px;
-    padding: 20px;
-  }
+ .gallery-title{
+  font-size: 18px
+ }
 
-  .home-gallery-container{
-    width: 100%;
-    margin:1rem auto;
-  }
-
-  .home-gallery-item{
-    width: 450px;
-    height: 500px;
-    margin-left:10px
-  }
-
-  .main-footer{
-    margin-top: 3200px;
-  }
-
+ .gallery-item:hover{
+  transform : scale(1.05)
+ }
 }
+
+@media (max-width:400px){
+
+  .container{
+    max-height: 100px;
+    margin: 0px;
+  }
+  .fa-house-chimney{
+    margin:0;
+  }
+  #item-title{
+    margin: 0;
+    font-size: 30px;
+  }
+  .overview{
+    font-size: 25px;
+  }
+  .gallery-description{
+    padding: 10px;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .gallery{
+   width: 350px;
+   grid-template-columns: 1fr;
+   margin-left: 20px;
+  }
+ 
+  .gallery-item{
+   width: 350px;
+   height: 380px;
+  }
+ 
+  .gallery-img{
+   width: 100%;
+   height: 355px;
+  }
+ 
+  .gallery-title{
+   font-size: 12px
+  }
+ 
+  .gallery-item:hover{
+   transform : scale(1.05)
+  }
+
+ }
