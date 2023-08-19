@@ -10,33 +10,21 @@
   <!--This links the stylesheet styles to html file-->
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Oswald&display=swap" rel="stylesheet">
   <!--This links a style sheet that contains fonts-->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   <!--This link is for the font awsome  icons-->
 </head>
 
 <body>
-
-  <header>
-    <div class="container">
-      <nav>
-        <ul>
-          <li><a href="#welcome">Home</a></li>
-          <li><a href="#gallery">Portfolio</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
+  <header-component></header-component>
   <section id="welcome" class="welcome-page">
     <h1><span class="auto-type"></span> </h1>
-  </section>
+  </section> 
 
   <!--The images are being put into classes so they can be styled with the css in grid-like format-->
   <section id="gallery" class="gallery-page">
     <div class="home-gallery-container">
-      <hr>
-      <h1 id="grid-title">My Portfolio</h1>
-      <hr>
+      <h1 id="grid-title" class="section-title">My Portfolio</h1>
       <div class="gallery">
         <div class="gallery-item">
           <a href="kitchen.html">
@@ -70,16 +58,29 @@
     </div>
   </section>
 
+  <section id="about" class="about-section">
+    <h1 id="about-title" class="section-title">About Me</h1>
+  </section>
 
-  <footer id="main-footer">
-    <a href="https://www.facebook.com/geoffrey.ameble"><i class="fab fa-facebook fa-3x"></i>
-      <a href="https://github.com/Aceofthehood1/csy1018"><i class="fab fa-github fa-3x"></i>
-        <a href="https://twitter.com/GeoffreyAmeble1"><i class="fab fa-twitter fa-3x"></i>
-          <a href="https://www.instagram.com/geoff_rey101/"><i class="fab fa-instagram fa-3x"></i>
-  </footer>
+  <section id="contacts" class="contacts-section">
+    <h1 id="contacts-title" class="section-title">Contacts</h1>
+    <div id="contacts">
+      <i class="fa-solid fa-mobile-button fa-4x"></i>
+    <p>+233 503789742</p>
+    <i class="fa-solid fa-mobile-button fa-4x"></i>
+    <p>g.ameble01@gmail.com</p>
+    <i class="fa-solid fa-mobile-button fa-4x"></i>
+    <p>geoffreyameble81@gmail.com</p>
+    </div>
+  </section>
+
+  <footer-component></footer-component>
+
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <!--Using typed js library-->
   <script src="script.js"></script>
+  <script src="components/header.js" type="text/javascript" defer></script>
+  <script src="components/footer.js" type="text/javascript" defer></script>
 </body>
 
 </html>

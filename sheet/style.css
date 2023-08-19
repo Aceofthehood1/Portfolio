@@ -26,7 +26,7 @@ header a{
 footer{
   background: rgb(0, 0, 0);
   border-top: red 3px solid;/*A background for the footer and and a red line border above and beside it */
-  min-height: 70px;
+  min-height: 40px;
   width:100%;
   text-align: center;
   margin: 0;
@@ -52,15 +52,21 @@ header nav{
   float:right;
 }
 
+ul li a {
+  color: red;
+}
+
 .fab{
-  color:white;
+  color:red;
   margin: 10px;
   transition:all .5s ease-in-out;
 }
 
+
 .fa-solid{
-  color:white;
+  color: red;
   margin: 10px;
+  cursor: pointer;
   transition:all .5s ease-in-out;
 }
 
@@ -94,14 +100,25 @@ h1{
 
 hr{
   /*This allows the images to be seperated by margins without any borders on the side*/
-  margin: 1rem, 0, 1rem, 0;
+  margin: 0;
   border:0;
-  border-top: 1px solid rgba(0,0,0,1);
+  border-top: 1px solid red;
 }
 
 .project-link{
   color: red;
 }
+
+.section-title{
+  color: red;
+  text-align: center;
+  padding: 25px;
+  height: 80px;
+  background-color: black;
+  border-top: red 3px solid;
+  border-bottom: red 3px solid; 
+}
+
 .gallery{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -117,9 +134,11 @@ hr{
   margin-bottom: 10px;
   width: 600px;
   height: 450px;
+  padding: 3px;
   border-radius: 5px;
   text-decoration: none;
-  background-color: red;
+  background-color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all 700ms ease-in-out;
 }
 
@@ -132,7 +151,7 @@ hr{
 .gallery-title{
   text-align: center;
   font-size: 25px;
-  color: black;
+  color: red;
   margin-top: 0;
 }
 
@@ -160,6 +179,10 @@ hr{
     justify-content: center;
 }
 
+.contacts-section{
+  height: 130vh;
+}
+
 span{
   color: black;
 }
@@ -170,11 +193,20 @@ a{
 }
 
 #item-title{
-  color: #ffffff;
+  color: red;
 }
 
 .overview{
   color: #3974b79d;
+}
+
+.fa-house-chimney{
+  color: red;
+  cursor:pointer;
+}
+
+#contacts{
+
 }
 
 @media (max-width:1200px){
@@ -210,6 +242,35 @@ a{
  }
 }
 
+@media (max-width:1000px){
+
+  .gallery-description{
+    padding: 7px;
+    text-align: center;
+  }
+ .gallery{
+  width: 900px;
+  margin-left: 30px;
+  margin-top: 60px;
+  gap: 20px;
+  row-gap: 30px;
+ }
+
+ .gallery-item{
+  width: 450px;
+  height: 350px;
+ }
+
+ .gallery-img{
+  width: 100%;
+  height: 320px;
+ }
+
+ .gallery-title{
+  font-size: 18px
+ }
+}
+
 @media (max-width:400px){
 
   .container{
@@ -234,7 +295,7 @@ a{
   .gallery{
    width: 350px;
    grid-template-columns: 1fr;
-   margin-left: 20px;
+   margin-left: 12px;
   }
  
   .gallery-item{
