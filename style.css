@@ -178,7 +178,7 @@ hr{
 .parent{
 display: flex;
 align-items: center;
-justify-content: left;
+justify-content: center;
 }
 
 .welcome-page{
