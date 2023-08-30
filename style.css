@@ -10,12 +10,6 @@ body{
   vertical-align: bottom;
 }
 
-.center{
-  position: absolute;
-  left:-25%;
-  top:350%;
-  transform: translate(50%, -50%);
-}
 header{
 background:rgb(0, 0, 0);
 padding-top:20px;
@@ -181,6 +175,12 @@ hr{
   font-family:"Oswald",sans-serif;
 }
 
+.parent{
+display: flex;
+align-items: center;
+justify-content: left;
+}
+
 .welcome-page{
     height: 100vh;
     margin-top: 10px;
@@ -199,13 +199,17 @@ hr{
 .about-section{
   height: 115vh;
 }
+.about-parent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .about-content{
   display: flex;
   flex-direction: column;
   background-color: black;
   width: 800px;
   height: 380px;
-  margin-left: 350px;
   border: 5px solid red;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -291,15 +295,6 @@ a{
  .about-section{
   height: 160vh;
  }
- .center{
-  left:-38%;
-  top:420%;
-  transform: translate(50%, -50%);
-}
-
- .about-content{
-  margin-left: 12rem;
- }
 
  .about-photo{
   height: 250px;
@@ -378,7 +373,7 @@ a{
  
   .gallery-item{
    width: 350px;
-   height: 380px;
+   height: 400px;
   }
  
   .gallery-img{
@@ -387,13 +382,16 @@ a{
   }
  
   .gallery-title{
-   font-size: 12px
+   font-size: 18px
   }
  
   .gallery-item:hover{
    transform : scale(1.05)
   }
 
+  .about-section{
+    height: 170vh;
+  }
   .about-content{
     margin-left: 14px;
     width: 350px;
