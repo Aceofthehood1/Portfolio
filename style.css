@@ -10,6 +10,12 @@ body{
   vertical-align: bottom;
 }
 
+.center{
+  position: absolute;
+  left:-25%;
+  top:350%;
+  transform: translate(50%, -50%);
+}
 header{
 background:rgb(0, 0, 0);
 padding-top:20px;
@@ -190,6 +196,9 @@ hr{
 .contacts{
   margin-top: 100px;
 }
+.about-section{
+  height: 115vh;
+}
 .about-content{
   display: flex;
   flex-direction: column;
@@ -278,6 +287,15 @@ a{
  .gallery-item:hover{
   transform : scale(1.05)
  }
+
+ .about-section{
+  height: 160vh;
+ }
+ .center{
+  left:-38%;
+  top:420%;
+  transform: translate(50%, -50%);
+}
 
  .about-content{
   margin-left: 12rem;
