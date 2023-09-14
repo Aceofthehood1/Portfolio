@@ -31,52 +31,60 @@
         another intern to make an
         angular project using the data from a pokemon api. I worked on the front-end and my partner worked on the
         backend of the project.  -->
-      <p class="gallery-description">Tech Stack: <strong>Angular, Pokemon API</strong></p>
+      <p class="gallery-description">Tech Stack: <span id="stack"></span></p>
       <p class="gallery-description"><strong>Link:</strong> <a class="project-link" target="_blank"
           href="https://angular-intern-project.vercel.app/">View Project</a> </p>
       <hr>
       <h2>Pages</h2>
       <div class="parent">
-      <div class="gallery">
-        <div class="gallery-item">
-          <img class="gallery-img" src="photos/pokelibrary-photos/home.png" alt="Placeholder Image" class="image">
-          <p class="gallery-title">Home Page</p>
-        </div>
+        <div class="gallery">
+          <div class="gallery-item">
+            <img class="gallery-img" src="photos/pokelibrary-photos/home.png" alt="Placeholder Image" class="image">
+            <p class="gallery-title">Home Page</p>
+          </div>
 
-        <div class="gallery-item">
-          <img class="gallery-img" src="photos/pokelibrary-photos/pokemon-page.png" alt="Placeholder Image"
-            class="image">
-          <p class="gallery-title">Pokemon Page</p>
-        </div>
+          <div class="gallery-item">
+            <img class="gallery-img" src="photos/pokelibrary-photos/pokemon-page.png" alt="Placeholder Image"
+              class="image">
+            <p class="gallery-title">Pokemon Page</p>
+          </div>
 
-        <div class="gallery-item">
-          <img class="gallery-img" src="photos/pokelibrary-photos/hover-effect.png" alt="Placeholder Image"
-            class="image">
-          <p class="gallery-title">On hover effect</p>
-        </div>
+          <div class="gallery-item">
+            <img class="gallery-img" src="photos/pokelibrary-photos/hover-effect.png" alt="Placeholder Image"
+              class="image">
+            <p class="gallery-title">On hover effect</p>
+          </div>
 
-        <div class="gallery-item">
-          <img class="gallery-img" src="photos/pokelibrary-photos/pikachu.png" alt="Placeholder Image" class="image">
-          <p class="gallery-title">Pikachu Page</p>
-        </div>
+          <div class="gallery-item">
+            <img class="gallery-img" src="photos/pokelibrary-photos/pikachu.png" alt="Placeholder Image" class="image">
+            <p class="gallery-title">Pikachu Page</p>
+          </div>
 
-        <div class="gallery-item">
-          <img class="gallery-img" src="photos/pokelibrary-photos/squirtle.png" alt="Placeholder Image" class="image">
-          <p class="gallery-title">Squirtle Page</p>
-        </div>
+          <div class="gallery-item">
+            <img class="gallery-img" src="photos/pokelibrary-photos/squirtle.png" alt="Placeholder Image" class="image">
+            <p class="gallery-title">Squirtle Page</p>
+          </div>
 
-        <div class="gallery-item">
-          <img class="gallery-img" src="photos/pokelibrary-photos/charmander.png" alt="Placeholder Image" class="image">
-          <p class="gallery-title">Charmander Page</p>
-        </div>
+          <div class="gallery-item">
+            <img class="gallery-img" src="photos/pokelibrary-photos/charmander.png" alt="Placeholder Image"
+              class="image">
+            <p class="gallery-title">Charmander Page</p>
+          </div>
         </div>
       </div>
     </div>
   </main>
 
   <footer-component></footer-component>
-
+  <script src="script.js"></script>
   <script src="components/footer.js" type="text/javascript" defer></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+    let stacktyped = new Typed('#stack', {
+      strings: ['^1000 <strong>Angular, Pokemon API</strong>'],
+      typeSpeed: 40,
+    });
+  </script>
 </body>
 
 </html>
