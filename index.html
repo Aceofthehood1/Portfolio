@@ -17,14 +17,15 @@
 <body>
   <header-component></header-component>
   <section id="welcome" class="welcome-page">
-    <h1><span class="auto-type"></span> </h1>
+    <h1><span class="auto-type"></span></h1>
   </section>
 
   <!--The images are being put into classes so they can be styled with the css in grid-like format-->
   <section id="gallery" class="gallery-page">
-      <div class="home-gallery-container">
-        <h1 id="grid-title" class="section-title">My Portfolio</h1>
-        <div class="parent">
+    <div class="home-gallery-container">
+      <h1 id="grid-title" class="section-title">My Portfolio <a class="arrow" href="#top"><i
+            class="arrow fa-solid fa-arrow-up fa-2xs"></i></a></h1>
+      <div class="parent">
         <div class="gallery">
           <div class="gallery-item">
             <a href="kitchen.html">
@@ -32,45 +33,50 @@
               <p class="gallery-title">Restaurant Site</p>
             </a>
           </div>
-  
+
           <div class="gallery-item">
             <a href="vehicle.html">
               <img class="gallery-img" src="photos/vehicle-photos/homepage.png" alt="Placeholder Image" class="image">
               <p class="gallery-title">MVC Vehicle Renting System</p>
             </a>
           </div>
-  
+
           <div class="gallery-item">
             <a href="pokelibrary.html">
               <img class="gallery-img" src="photos/pokelibrary-photos/home.png" alt="Placeholder Image" class="image">
               <p class="gallery-title">PokeLibrary Site</p>
             </a>
           </div>
-  
+
           <div class="gallery-item">
             <a href="event.html">
               <img class="gallery-img" src="photos/event-photos/homepage.png" alt="Placeholder Image" class="image">
               <p class="gallery-title">Event Creator</p>
             </a>
           </div>
-  
+
         </div>
       </div>
     </div>
   </section>
 
   <section id="about" class="about-section">
-    <h1 id="about-title" class="section-title">About Me</h1>
-    <img class="about-photo" src="photos/profile.jpg">
+    <h1 id="about-title" class="section-title">About Me <a class="arrow" href="#top"><i
+          class="arrow fa-solid fa-arrow-up fa-2xs"></i></a></h1>
+    <img class="about-photo" src="photos/profile1.jpg">
     <div class="about-parent">
-      <div class=" about-content">
-        <p id="about-text">I am a Junior Software Developer / Web developer. What got me into programming was seeing how a
+      <div class="about-content">
+        <p id="about-text">I am a Junior Software Developer / Web developer. What got me into programming was seeing how
+          a
           lot of web applications and websites made peoples lives easier. The problem solving side of it was very
-           interesting to me and I wanted to apart of that. </p>
-        <p id="about-text">Now I am currently working on a clipboard application to make me use my reusable code from past
-          projects on new ones if they have any simiarities and it will keep scaling the more projects I work on. I am also working on website that will allow
+          interesting to me and I wanted to apart of that. </p>
+        <p id="about-text">Now I am currently working on a clipboard application to make me use my reusable code from
+          past
+          projects on new ones if they have any simiarities and it will keep scaling the more projects I work on. I am
+          also working on website that will allow
           users to book seats and make orders for multiple restaurants depending on which restaurant they select.</p>
-        <p id="about-text">When I am not programming, I like to spend my time playing football, volleyball, video games or
+        <p id="about-text">When I am not programming, I like to spend my time playing football, volleyball, video games
+          or
           watching anime.</p>
       </div>
     </div>
@@ -78,7 +84,8 @@
   </section>
 
   <section id="contacts" class="contacts-section">
-    <h1 id="contacts-title" class="section-title">Contacts</h1>
+    <h1 id="contacts-title" class="section-title">Contacts <a class="arrow" href="#top"><i
+          class="arrow fa-solid fa-arrow-up fa-2xs"></i></a></h1>
     <div class="contacts">
       <i class="fa-solid fa-mobile-button fa-4x"></i>
       <p>+233 503789742</p>
@@ -91,7 +98,7 @@
 
   <footer-component></footer-component>
 
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
   <!--Using typed js library-->
   <script src="script.js"></script>
   <script src="components/header.js" type="text/javascript" defer></script>
