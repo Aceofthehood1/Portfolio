@@ -21,41 +21,78 @@
   </section>
 
   <!--The images are being put into classes so they can be styled with the css in grid-like format-->
-  <section id="gallery" class="gallery-page">
+  <section id="portfolio-section" class="gallery-page">
     <div class="home-gallery-container">
       <h1 id="grid-title" class="section-title">My Portfolio <a class="arrow" href="#top"><i
             class="arrow fa-solid fa-arrow-up fa-2xs"></i></a></h1>
-      <div class="parent">
-        <div class="gallery">
-          <div class="gallery-item">
-            <a href="kitchen.html">
-              <img class="gallery-img" src="photos/kitchen-photos/menu-list.png" alt="Placeholder Image" class="image">
-              <p class="gallery-title">Restaurant Site</p>
-            </a>
-          </div>
-
-          <div class="gallery-item">
-            <a href="vehicle.html">
-              <img class="gallery-img" src="photos/vehicle-photos/homepage.png" alt="Placeholder Image" class="image">
-              <p class="gallery-title">MVC Vehicle Renting System</p>
-            </a>
-          </div>
-
-          <div class="gallery-item">
-            <a href="pokelibrary.html">
-              <img class="gallery-img" src="photos/pokelibrary-photos/home.png" alt="Placeholder Image" class="image">
-              <p class="gallery-title">PokeLibrary Site</p>
-            </a>
-          </div>
-
-          <div class="gallery-item">
-            <a href="event.html">
-              <img class="gallery-img" src="photos/event-photos/homepage.png" alt="Placeholder Image" class="image">
-              <p class="gallery-title">Event Creator</p>
-            </a>
-          </div>
-
         </div>
+      </div>
+    </div>
+
+    <div id="slider">
+      <input type="radio" name="slider" id="slide1" checked />
+      <input type="radio" name="slider" id="slide2" />
+      <input type="radio" name="slider" id="slide3" />
+      <input type="radio" name="slider" id="slide4" />
+
+      <div id="slides">
+        <div id="overflow">
+          <div class="inner">
+            <div class="slide slide_2">
+              <a href="https://angular-intern-project.vercel.app/" target="_blank" class="slide-content">
+                <img class="slide-img" src="photos/pikachu.png">
+                <div class="slide-text">
+                  <h2>PokeLibrary Site</h2>
+                <p>The app allows the user to view the details of pokemon shown by taking the
+                   pokemon data from an api and representing the data onto the page based on the users selection.<br>
+                   <b>Tech Stack</b>: Angular, Pokemon Api</p>
+                </div>
+              </a>
+            </div>
+            <div class="slide slide_2">
+              <a href="https://inventory-system-23369.bubbleapps.io/version-test" target="_blank" class="slide-content">
+                <img class="slide-img" src="photos/inventory.png">
+                <div class="slide-text">
+                  <h2>Inventory System for Products</h2>
+                <p>This System is used to hold an inventory of products and their ingredients. The products can be requested and assigned to distributors who will then go and sell the products.Ingredients can be added and a product will consist of different ingredients. There is an analysis section which consists of different charts to let the user know about what is taking place on the app. Like which distributor has requested the most products or how many units of each product is available.<br><b>Made With bubble.io</b></p>
+                </div>
+              </a>
+            </div>
+            <div class="slide slide_2">
+              <a href="https://utility-site.vercel.app/" target="_blank" class="slide-content">
+                <img class="slide-img" src="photos/Carousel.png">
+                <div class="slide-text">
+                  <h2>Clipboard App</h2>
+                <p>This app allows a user to copy a piece of code used to make different components in tailwindcss for a react app such as a login form, cards or even navigation bars.This was made so I could use my reusable code from past projects on new ones if they have any simiarities and it will keep scaling the more projects I work on.<br><b>Tech Stack: React , Typescript, TailwindCSS</b></p>
+                </div>
+              </a>
+            </div>
+            <div class="slide slide_2">
+              <a href="https://ticketingsystem-10955.bubbleapps.io/version-test" target="_blank" class="slide-content">
+                <img class="slide-img" src="photos/event-photos/homepage.png">
+                <div class="slide-text">
+                  <h2>Event Creator</h2>
+                <p>There are two sections for this site. A customer section and an event planner section. 
+                  The event planners add or manage events which the customers will then be able to 
+                  view and purchase the ticket for the event. The customer will be able to have a look at their purchased 
+                  tickets.<br><b>Made with bubble.io</b></b></p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="controls">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
+      </div>
+      <div id="bullets">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+        <label for="slide4"></label>
       </div>
     </div>
   </section>
@@ -63,19 +100,15 @@
   <section id="about" class="about-section">
     <h1 id="about-title" class="section-title">About Me <a class="arrow" href="#top"><i
           class="arrow fa-solid fa-arrow-up fa-2xs"></i></a></h1>
-    <img class="about-photo" src="photos/profile1.jpg">
+   <!-- <img class="about-photo" src=""> --> 
     <div class="about-parent">
       <div class="about-content">
         <p id="about-text">I am a Junior Software Developer / Web developer. What got me into programming was seeing how
           a
-          lot of web applications and websites made peoples lives easier. The problem solving side of it was very
-          interesting to me and I wanted to apart of that. </p>
-        <p id="about-text">Now I am currently working on a clipboard application to make me use my reusable code from
-          past
-          projects on new ones if they have any simiarities and it will keep scaling the more projects I work on. I am
-          also working on website that will allow
-          users to book seats and make orders for multiple restaurants depending on which restaurant they select.</p>
-        <p id="about-text">When I am not programming, I like to spend my time playing football, volleyball, video games
+          lot of web applications and websites made peoples lives easier and the fact that the projects you make can always get better as there is no such thing as a perfect application.</p>
+        <p id="about-text">The problem solving side of it was very
+          interesting to me and I wanted to delve more into it. Being able to analyse data and break it down to be able to store it in a database and linking that to a user interface after making multiple designs, I enjoy it all.</p>
+        <p id="about-text">When I am not programming, I like to spend my time playing football, volleyball, video games, making music
           or
           watching anime.</p>
       </div>
